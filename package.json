@@ -1,23 +1,18 @@
 {
-  "name": "juicebox",
+  "name": "juicebox-pt2",
   "version": "1.0.0",
+  "description": "",
   "main": "index.js",
   "scripts": {
-    "seed:dev": "nodemon ./db/seed.js"
+    "seed-dev": "nodemon ./db/seed.js",
+    "start": "node index.js",
+    "start-dev": "nodemon index.js"
   },
-  "keywords": [],
   "author": "",
   "license": "ISC",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/tbreunig37/juicebox.git"
-  },
-  "bugs": {
-    "url": "https://github.com/tbreunig37/juicebox/issues"
-  },
-  "homepage": "https://github.com/tbreunig37/juicebox#readme",
-  "description": "",
   "dependencies": {
+    "express": "^4.18.1",
+    "morgan": "^1.10.0",
     "pg": "^8.7.3"
   },
   "devDependencies": {
